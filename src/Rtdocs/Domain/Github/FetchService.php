@@ -11,7 +11,7 @@ class FetchService
 {
     protected $factory;
 
-    public function __construct(PayloadFactory $factory, GithubClient $client, $client_id = null, $secret = null, $method)
+    public function __construct(PayloadFactory $factory, GithubClient $client, $client_id = null, $secret = null, $method = null)
     {
         $this->factory = $factory;
         $this->client = $client;
