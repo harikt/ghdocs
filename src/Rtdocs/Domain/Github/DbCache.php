@@ -9,6 +9,8 @@ use Exception;
 
 class DbCache implements CacheInterface
 {
+    protected $row;
+
     /**
      * @var PDO
      */
@@ -98,17 +100,19 @@ class DbCache implements CacheInterface
      */
     protected function getRow($id)
     {
-        $row = '';
+        if ($this->row) {
+            return $this->row;
+        }
         try {
             $id = md5($id);
             $stmt = "SELECT id, content, etag, created, modified FROM cache WHERE id =:id";
             $sth = $this->pdo->prepare($stmt);
             $sth->bindValue('id', $id);
             $sth->execute();
-            $row = $sth->fetch(PDO::FETCH_ASSOC);
+            $this->row = $sth->fetch(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
             // throw new \InvalidArgumentException($e->getMessage());
         }
-        return $row;
+        return $this->row;
     }
 }
