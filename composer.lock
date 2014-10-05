@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8199b1d3b06364c3e5c7af33751d532f",
+    "hash": "b9e27f6aaa54d4bd276afa243ca8e619",
     "packages": [
         {
             "name": "aura/accept",
@@ -114,16 +114,16 @@
         },
         {
             "name": "aura/cli",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Cli.git",
-                "reference": "9fe54a204f055ac6bc80ebb546711b9c2555d772"
+                "reference": "93da36b48fecc932c8f9f16cbb7fb0e1945706d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Cli/zipball/9fe54a204f055ac6bc80ebb546711b9c2555d772",
-                "reference": "9fe54a204f055ac6bc80ebb546711b9c2555d772",
+                "url": "https://api.github.com/repos/auraphp/Aura.Cli/zipball/93da36b48fecc932c8f9f16cbb7fb0e1945706d2",
+                "reference": "93da36b48fecc932c8f9f16cbb7fb0e1945706d2",
                 "shasum": ""
             },
             "require": {
@@ -167,11 +167,11 @@
                 "options",
                 "stdio"
             ],
-            "time": "2014-09-27 21:16:39"
+            "time": "2014-08-30 16:34:36"
         },
         {
             "name": "aura/cli-kernel",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Cli_Kernel.git",
@@ -228,7 +228,7 @@
         },
         {
             "name": "aura/di",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Di.git",
@@ -280,16 +280,16 @@
         },
         {
             "name": "aura/dispatcher",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Dispatcher.git",
-                "reference": "0e4b16726b96ed77daa63cb8472a7bd3b31caf61"
+                "reference": "e4d02125a516feb65545dd1c7ff6417733cc9699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Dispatcher/zipball/0e4b16726b96ed77daa63cb8472a7bd3b31caf61",
-                "reference": "0e4b16726b96ed77daa63cb8472a7bd3b31caf61",
+                "url": "https://api.github.com/repos/auraphp/Aura.Dispatcher/zipball/e4d02125a516feb65545dd1c7ff6417733cc9699",
+                "reference": "e4d02125a516feb65545dd1c7ff6417733cc9699",
                 "shasum": ""
             },
             "require": {
@@ -326,20 +326,20 @@
                 "dispatcher",
                 "factory"
             ],
-            "time": "2014-09-05 16:11:31"
+            "time": "2014-08-28 20:54:38"
         },
         {
             "name": "aura/html",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Html.git",
-                "reference": "64badefc91780754cd56d1e947cd74af0f267b59"
+                "reference": "5098cb955de6bf3b34c2893cc46a3cdee90b79f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/64badefc91780754cd56d1e947cd74af0f267b59",
-                "reference": "64badefc91780754cd56d1e947cd74af0f267b59",
+                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/5098cb955de6bf3b34c2893cc46a3cdee90b79f7",
+                "reference": "5098cb955de6bf3b34c2893cc46a3cdee90b79f7",
                 "shasum": ""
             },
             "require": {
@@ -386,11 +386,11 @@
                 "html",
                 "input"
             ],
-            "time": "2014-09-27 21:33:43"
+            "time": "2014-08-30 16:53:11"
         },
         {
             "name": "aura/project-kernel",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Project_Kernel.git",
@@ -445,16 +445,16 @@
         },
         {
             "name": "aura/router",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Router.git",
-                "reference": "e1da8d0253ecb91f113557cf5ddf146ae318e317"
+                "reference": "df890a9f2da9be049fc1ede9c4813a037800de99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/e1da8d0253ecb91f113557cf5ddf146ae318e317",
-                "reference": "e1da8d0253ecb91f113557cf5ddf146ae318e317",
+                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/df890a9f2da9be049fc1ede9c4813a037800de99",
+                "reference": "df890a9f2da9be049fc1ede9c4813a037800de99",
                 "shasum": ""
             },
             "require": {
@@ -495,20 +495,20 @@
                 "router",
                 "routing"
             ],
-            "time": "2014-09-27 21:36:20"
+            "time": "2014-08-29 21:16:03"
         },
         {
             "name": "aura/view",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.View.git",
-                "reference": "2b0f07401340c63af9954f4dc021e1582771717e"
+                "reference": "40c638b4dd89a4c1ea742734ec076025c671d8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.View/zipball/2b0f07401340c63af9954f4dc021e1582771717e",
-                "reference": "2b0f07401340c63af9954f4dc021e1582771717e",
+                "url": "https://api.github.com/repos/auraphp/Aura.View/zipball/40c638b4dd89a4c1ea742734ec076025c671d8df",
+                "reference": "40c638b4dd89a4c1ea742734ec076025c671d8df",
                 "shasum": ""
             },
             "require": {
@@ -555,11 +555,11 @@
                 "twostep view",
                 "view"
             ],
-            "time": "2014-09-27 21:45:05"
+            "time": "2014-08-30 16:44:23"
         },
         {
             "name": "aura/web",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Web.git",
@@ -612,16 +612,16 @@
         },
         {
             "name": "aura/web-kernel",
-            "version": "dev-develop-2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Web_Kernel.git",
-                "reference": "fdeeebc4276b8d4b6d5ab0c456c1727c8e8344b1"
+                "reference": "18aad5301871b05f13bde4435dc19a58470b061b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Web_Kernel/zipball/fdeeebc4276b8d4b6d5ab0c456c1727c8e8344b1",
-                "reference": "fdeeebc4276b8d4b6d5ab0c456c1727c8e8344b1",
+                "url": "https://api.github.com/repos/auraphp/Aura.Web_Kernel/zipball/18aad5301871b05f13bde4435dc19a58470b061b",
+                "reference": "18aad5301871b05f13bde4435dc19a58470b061b",
                 "shasum": ""
             },
             "require": {
@@ -666,7 +666,7 @@
                 "kernel",
                 "web"
             ],
-            "time": "2014-10-04 23:07:39"
+            "time": "2014-10-05 15:21:10"
         },
         {
             "name": "erusev/parsedown",
@@ -808,16 +808,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "dev-master",
+            "version": "v3.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "d27346b6c8cb6a42092e763f8a2f674dfc560956"
+                "reference": "54991459675c1a2924122afbb0e5609ade581155"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/d27346b6c8cb6a42092e763f8a2f674dfc560956",
-                "reference": "d27346b6c8cb6a42092e763f8a2f674dfc560956",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/54991459675c1a2924122afbb0e5609ade581155",
+                "reference": "54991459675c1a2924122afbb0e5609ade581155",
                 "shasum": ""
             },
             "require": {
@@ -896,11 +896,11 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-09-16 21:19:27"
+            "time": "2014-08-11 04:32:36"
         },
         {
             "name": "knplabs/github-api",
-            "version": "dev-master",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/php-github-api.git",
@@ -961,24 +961,19 @@
         },
         {
             "name": "psr/log",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11"
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/a78d6504ff5d4367497785ab2ade91db3a9fbe11",
-                "reference": "a78d6504ff5d4367497785ab2ade91db3a9fbe11",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
                 "shasum": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Psr\\Log\\": ""
@@ -1000,21 +995,21 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2014-01-18 15:33:09"
+            "time": "2012-12-21 11:40:51"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "dev-master",
+            "version": "v2.5.5",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "e133748fd9165e24f8e9498ef5862f8bd37004e5"
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e133748fd9165e24f8e9498ef5862f8bd37004e5",
-                "reference": "e133748fd9165e24f8e9498ef5862f8bd37004e5",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f6281337bf5f985f585d1db6a83adb05ce531f46",
+                "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46",
                 "shasum": ""
             },
             "require": {
@@ -1023,8 +1018,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~2.0",
-                "symfony/dependency-injection": "~2.6",
-                "symfony/expression-language": "~2.6",
+                "symfony/dependency-injection": "~2.0,<2.6.0",
                 "symfony/stopwatch": "~2.2"
             },
             "suggest": {
@@ -1034,7 +1028,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -1058,7 +1052,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-04 06:08:58"
+            "time": "2014-09-28 15:56:11"
         }
     ],
     "packages-dev": [
@@ -1067,10 +1061,8 @@
     "aliases": [
 
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
-        "aura/cli-kernel": 20,
-        "aura/web-kernel": 20,
         "foa/html-view-bundle": 20,
         "aura/asset-bundle": 20,
         "aura/accept": 20

@@ -14,10 +14,9 @@
             "homepage": "https://github.com/harikt/ghdocs/contributors"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "aura/cli-kernel": "2.*@dev",
-        "aura/web-kernel": "2.*@dev",
+        "aura/cli-kernel": "2.*",
+        "aura/web-kernel": "2.*",
         "erusev/parsedown-extra": "0.2.*",
         "knplabs/github-api": "~1.3",
         "foa/html-view-bundle": "2.0.*@dev",
