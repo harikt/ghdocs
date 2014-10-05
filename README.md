@@ -27,3 +27,14 @@ to
 $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Github\HttpClient\Cache\FilesystemCache');
 $di->params['Github\HttpClient\Cache\FilesystemCache']['path'] = __DIR__ . '/tmp';
 ```
+
+## Rate Limit
+
+Not to exceed rate limit by github, it is good to register and get these values.
+You can comment out these values if you are not using.
+
+```php
+$di->params['Rtdocs\Domain\Github\FetchService']['client_id'] = getenv('GITHUB_CLIENT_ID');
+$di->params['Rtdocs\Domain\Github\FetchService']['secret'] = getenv('GITHUB_CLIENT_SECRET');
+$di->params['Rtdocs\Domain\Github\FetchService']['method'] = \Github\Client::AUTH_URL_CLIENT_ID;
+```

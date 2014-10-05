@@ -3,6 +3,7 @@ namespace Aura\Framework_Project\_Config;
 
 use Aura\Di\Config;
 use Aura\Di\Container;
+use Github\Client;
 
 class Common extends Config
 {
@@ -14,6 +15,11 @@ class Common extends Config
         $di->params['Rtdocs\Web\Responder\FetchResponder']['response'] = $di->lazyGet('aura/web-kernel:response');
         $di->params['Rtdocs\Domain\Github\FetchService']['client'] = $di->lazyGet('github_client');
         $di->params['Rtdocs\Domain\Github\FetchService']['factory'] = $di->lazyNew('Rtdocs\Domain\Payload\PayloadFactory');
+
+        // Github rate limit
+        $di->params['Rtdocs\Domain\Github\FetchService']['client_id'] = getenv('GITHUB_CLIENT_ID');
+        $di->params['Rtdocs\Domain\Github\FetchService']['secret'] = getenv('GITHUB_CLIENT_SECRET');
+        $di->params['Rtdocs\Domain\Github\FetchService']['method'] = \Github\Client::AUTH_URL_CLIENT_ID;
 
         $di->set('github_service', $di->lazyNew('Rtdocs\Domain\Github\FetchService'));
 
@@ -32,7 +38,7 @@ class Common extends Config
         $di->params['Github\Client']['httpClient'] = $di->lazyNew('Github\HttpClient\CachedHttpClient');
         $di->set('github_client', $di->lazyNew('Github\Client'));
         $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Github\HttpClient\Cache\FilesystemCache');
-        $di->params['Github\HttpClient\Cache\FilesystemCache']['path'] = __DIR__ . '/tmp';
+        $di->params['Github\HttpClient\Cache\FilesystemCache']['path'] = dirname(__DIR__) . '/tmp';
 /*
         $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Rtdocs\Domain\Github\DbCache');
         $di->params['Rtdocs\Domain\Github\DbCache']['pdo'] = $di->lazyGet('connection');
