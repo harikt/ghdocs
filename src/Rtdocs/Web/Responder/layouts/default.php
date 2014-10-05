@@ -67,19 +67,24 @@
       </div>
     </div>
     <div class="container">
-
-        <?php
-        if ($this->hasSection('sidebar')) {
-            echo $this->getSection('sidebar');
-        } else {
-            // echo $this->render('sidebar');
-        }
-        ?>
-        <?php echo $this->getContent(); ?>
-
+        <div class="row">
+            <div class="col-md-4" id="sidebar">
+            </div>
+            <div class="col-md-8">
+                <?php echo $this->getContent(); ?>
+            </div>
+        </div>
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->router()
+      ->generateRaw('aura.asset',
+          array(
+              'vendor' => 'rtdocs',
+              'package' => 'reader',
+              'file' => 'js/docs.js'
+          )
+      ); ?>"></script>
     <script src="<?php echo $this->router()
       ->generateRaw('aura.asset',
           array(
