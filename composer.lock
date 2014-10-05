@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b9e27f6aaa54d4bd276afa243ca8e619",
+    "hash": "1b395c2eefa2ce2147d20762a8783df5",
     "packages": [
         {
             "name": "aura/accept",
@@ -330,16 +330,16 @@
         },
         {
             "name": "aura/html",
-            "version": "2.0.0",
+            "version": "dev-develop-2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Html.git",
-                "reference": "5098cb955de6bf3b34c2893cc46a3cdee90b79f7"
+                "reference": "64badefc91780754cd56d1e947cd74af0f267b59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/5098cb955de6bf3b34c2893cc46a3cdee90b79f7",
-                "reference": "5098cb955de6bf3b34c2893cc46a3cdee90b79f7",
+                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/64badefc91780754cd56d1e947cd74af0f267b59",
+                "reference": "64badefc91780754cd56d1e947cd74af0f267b59",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "html",
                 "input"
             ],
-            "time": "2014-08-30 16:53:11"
+            "time": "2014-09-27 21:33:43"
         },
         {
             "name": "aura/project-kernel",
@@ -1063,6 +1063,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "aura/html": 20,
         "foa/html-view-bundle": 20,
         "aura/asset-bundle": 20,
         "aura/accept": 20
