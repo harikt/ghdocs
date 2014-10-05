@@ -11,10 +11,13 @@ class FetchService
 {
     protected $factory;
 
-    public function __construct(PayloadFactory $factory, GithubClient $client)
+    public function __construct(PayloadFactory $factory, GithubClient $client, $client_id = null, $secret = null, $method = null)
     {
         $this->factory = $factory;
         $this->client = $client;
+        if ($client_id && $method) {
+            $this->client->authenticate($client_id, $secret, $method);
+        }
     }
 
     public function readFile($org, $repo, $file, $version)
