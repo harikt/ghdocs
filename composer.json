@@ -1,15 +1,17 @@
 {
-    "name": "aura/framework-project",
+    "name": "harikt/ghdocs",
     "type": "project",
-    "description": "A minimal web+CLI framework built from Aura v2 packages",
+    "description": "Render github markdown easily",
     "keywords": [
-        "framework"
+        "github",
+        "markdown",
+        "documentation"
     ],
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Aura.Framework_Project Contributors",
-            "homepage": "https://github.com/auraphp/Aura.Framework_Project/contributors"
+            "name": "ghdocs Contributors",
+            "homepage": "https://github.com/harikt/ghdocs/contributors"
         }
     ],
     "minimum-stability": "dev",
