@@ -20,7 +20,7 @@ class FetchService
     public function readFile($org, $repo, $file, $version)
     {
         try {
-            $readme = $this->client->api('repo')->contents()->show($org, $repo, $file, $version);
+            $readme = $this->client->repo()->contents()->show($org, $repo, $file, $version);
             $instance = new ParsedownExtra();
             $content = $instance->text(base64_decode($readme['content']));
             return $this->factory->found(array('content' => $content));
@@ -35,7 +35,7 @@ class FetchService
     {
         $releases = array();
         try {
-            $response = $this->client->api('repo')->releases()->all($org, $repo);
+            $response = $this->client->repo()->releases()->all($org, $repo);
             foreach ($response as $release) {
                 $releases[] = $release['tag_name'];
             }
