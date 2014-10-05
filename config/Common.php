@@ -30,13 +30,17 @@ class Common extends Config
         $di->set('view', $di->lazyNew('Aura\View\View'));
 
         $di->params['Github\Client']['httpClient'] = $di->lazyNew('Github\HttpClient\CachedHttpClient');
-        $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Rtdocs\Domain\Github\DbCache');
         $di->set('github_client', $di->lazyNew('Github\Client'));
+        $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Github\HttpClient\Cache\FilesystemCache');
+        $di->params['Github\HttpClient\Cache\FilesystemCache']['path'] = __DIR__ . '/tmp';
+/*
+        $di->setter['Github\HttpClient\CachedHttpClient']['setCache'] = $di->lazyNew('Rtdocs\Domain\Github\DbCache');
         $di->params['Rtdocs\Domain\Github\DbCache']['pdo'] = $di->lazyGet('connection');
         $di->params['Pdo'] = array(
             'dsn' => getenv('DB_CONNECTION')
         );
         $di->set('connection', $di->lazyNew('Pdo'));
+*/
     }
 
     public function modify(Container $di)
