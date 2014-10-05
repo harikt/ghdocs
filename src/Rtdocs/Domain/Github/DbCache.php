@@ -9,6 +9,9 @@ use Exception;
 
 class DbCache implements CacheInterface
 {
+    /**
+     * @var array
+     */
     protected $row;
 
     /**
@@ -48,15 +51,16 @@ class DbCache implements CacheInterface
         );
         try {
             if (! $this->getRow($id)) {
-                $stmt = 'INSERT INTO cache (id, content, etag, created, modified) VALUES (:id, :content, :etag, now(), now());';
+                $sql = 'INSERT INTO cache (id, content, etag, created, modified) VALUES (:id, :content, :etag, now(), now());';
             } else {
-                $stmt = 'UPDATE cache SET content = :content, etag = :etag, modified = now() WHERE id = :id';
+                $sql = 'UPDATE cache SET content = :content, etag = :etag, modified = now() WHERE id = :id';
             }
-            $sth = $this->pdo->prepare($stmt);
-            $sth->bindValue('content', $bind['content']);
-            $sth->bindValue('etag', $bind['etag']);
-            $sth->bindValue('id', $bind['id']);
-            $sth->execute();
+            unset($this->row[$bind['id']]);
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->bindValue('content', $bind['content']);
+            $stmt->bindValue('etag', $bind['etag']);
+            $stmt->bindValue('id', $bind['id']);
+            $stmt->execute();
         } catch (Exception $e) {
             throw new \InvalidArgumentException($e->getMessage());
         }
@@ -100,19 +104,19 @@ class DbCache implements CacheInterface
      */
     protected function getRow($id)
     {
-        if ($this->row) {
-            return $this->row;
+        $id = md5($id);
+        if (isset($this->row[$id])) {
+            return $this->row[$id];
         }
         try {
-            $id = md5($id);
-            $stmt = "SELECT id, content, etag, created, modified FROM cache WHERE id =:id";
-            $sth = $this->pdo->prepare($stmt);
-            $sth->bindValue('id', $id);
-            $sth->execute();
-            $this->row = $sth->fetch(PDO::FETCH_ASSOC);
+            $sql = "SELECT id, content, etag, created, modified FROM cache WHERE id =:id";
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->bindValue('id', $id);
+            $stmt->execute();
+            $this->row[$id] = $stmt->fetch(PDO::FETCH_ASSOC);
+            $stmt->closeCursor();
         } catch (Exception $e) {
-            // throw new \InvalidArgumentException($e->getMessage());
         }
-        return $this->row;
+        return $this->row[$id];
     }
 }
