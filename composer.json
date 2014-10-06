@@ -19,10 +19,9 @@
         "aura/web-kernel": "2.*",
         "erusev/parsedown-extra": "0.2.*",
         "knplabs/github-api": "~1.3",
-        "aura/html": "2.0.*@dev",
-        "foa/html-view-bundle": "2.0.*@dev",
+        "foa/html-view-bundle": "2.0.*",
         "aura/asset-bundle": "2.0.*@dev",
-        "aura/accept": "2.0.*@dev"
+        "aura/accept": "2.0.*@beta"
     },
     "autoload": {
         "psr-0": {

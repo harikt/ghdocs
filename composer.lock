@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b395c2eefa2ce2147d20762a8783df5",
+    "hash": "257bbc2c1c5b94b9b0ae3095adc2bc92",
     "packages": [
         {
             "name": "aura/accept",
-            "version": "dev-develop-2",
+            "version": "2.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Accept.git",
-                "reference": "b6110f5f696323df1087b076240086016028e55f"
+                "reference": "27f228330b3bcb727549c3841a9df3c8d510e29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Accept/zipball/b6110f5f696323df1087b076240086016028e55f",
-                "reference": "b6110f5f696323df1087b076240086016028e55f",
+                "url": "https://api.github.com/repos/auraphp/Aura.Accept/zipball/27f228330b3bcb727549c3841a9df3c8d510e29d",
+                "reference": "27f228330b3bcb727549c3841a9df3c8d510e29d",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 }
             ],
             "description": "Provides content-negotiation tools using Accept* headers.",
-            "homepage": "https://github.com/auraphp/Aura.Accept/releases",
+            "homepage": "https://github.com/auraphp/Aura.Accept",
             "keywords": [
                 "accept",
                 "accept-charset",
@@ -62,7 +62,7 @@
                 "content type",
                 "media type"
             ],
-            "time": "2014-10-04 16:51:43"
+            "time": "2014-10-05 16:16:11"
         },
         {
             "name": "aura/asset-bundle",
@@ -330,16 +330,16 @@
         },
         {
             "name": "aura/html",
-            "version": "dev-develop-2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Html.git",
-                "reference": "64badefc91780754cd56d1e947cd74af0f267b59"
+                "reference": "e3349b6c11d36b5b0c285a64e36d4b444de7f865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/64badefc91780754cd56d1e947cd74af0f267b59",
-                "reference": "64badefc91780754cd56d1e947cd74af0f267b59",
+                "url": "https://api.github.com/repos/auraphp/Aura.Html/zipball/e3349b6c11d36b5b0c285a64e36d4b444de7f865",
+                "reference": "e3349b6c11d36b5b0c285a64e36d4b444de7f865",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "html",
                 "input"
             ],
-            "time": "2014-09-27 21:33:43"
+            "time": "2014-10-05 15:54:11"
         },
         {
             "name": "aura/project-kernel",
@@ -445,16 +445,16 @@
         },
         {
             "name": "aura/router",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Router.git",
-                "reference": "df890a9f2da9be049fc1ede9c4813a037800de99"
+                "reference": "86e2ada79442b20c2c55747c442da2ec8fb48765"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/df890a9f2da9be049fc1ede9c4813a037800de99",
-                "reference": "df890a9f2da9be049fc1ede9c4813a037800de99",
+                "url": "https://api.github.com/repos/auraphp/Aura.Router/zipball/86e2ada79442b20c2c55747c442da2ec8fb48765",
+                "reference": "86e2ada79442b20c2c55747c442da2ec8fb48765",
                 "shasum": ""
             },
             "require": {
@@ -495,7 +495,7 @@
                 "router",
                 "routing"
             ],
-            "time": "2014-08-29 21:16:03"
+            "time": "2014-10-05 17:29:04"
         },
         {
             "name": "aura/view",
@@ -753,22 +753,22 @@
         },
         {
             "name": "foa/html-view-bundle",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/friendsofaura/FOA.Html_View_Bundle.git",
-                "reference": "a8ad00615c687ac352142aed63a122679a16b8cb"
+                "reference": "d6943933c1a1983594cd5d72b0f2131795479216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/friendsofaura/FOA.Html_View_Bundle/zipball/a8ad00615c687ac352142aed63a122679a16b8cb",
-                "reference": "a8ad00615c687ac352142aed63a122679a16b8cb",
+                "url": "https://api.github.com/repos/friendsofaura/FOA.Html_View_Bundle/zipball/d6943933c1a1983594cd5d72b0f2131795479216",
+                "reference": "d6943933c1a1983594cd5d72b0f2131795479216",
                 "shasum": ""
             },
             "require": {
-                "aura/di": "~2.0@beta",
-                "aura/html": "2.0.*@dev",
-                "aura/view": "2.0.*"
+                "aura/di": "~2.0",
+                "aura/html": "~2.1",
+                "aura/view": "~2.0"
             },
             "type": "library",
             "extra": {
@@ -804,7 +804,7 @@
                 "html",
                 "view"
             ],
-            "time": "2014-09-06 07:20:26"
+            "time": "2014-10-05 16:43:07"
         },
         {
             "name": "guzzle/guzzle",
@@ -1063,10 +1063,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "aura/html": 20,
-        "foa/html-view-bundle": 20,
         "aura/asset-bundle": 20,
-        "aura/accept": 20
+        "aura/accept": 10
     },
     "prefer-stable": false,
     "platform": [
