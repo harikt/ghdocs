@@ -61,7 +61,7 @@ jQuery(function($) {
   }
   $('.nav-list > li').on('click', 'a', function() {
     var id = $(this).attr('href');
-    $('html,body').animate({scrollTop: $(id).offset().top - 40},'slow');
+    $('html,body').animate({scrollTop: $(id).offset().top - 55},'slow');
   });
 });
 
