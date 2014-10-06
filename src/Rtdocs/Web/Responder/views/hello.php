@@ -18,3 +18,6 @@ calling <a href="/KnpLabs/php-github-api/1.3.1/doc/index.md">/KnpLabs/php-github
     <li><a href="/friendsofaura/FOA.Html_View_Bundle/develop-2/README.md">foa/html-view-bundle</a></li>
     <li><a href="/harikt/Aura.Asset_Bundle/master/README.md">aura/asset-bundle</a></li>
 </ul>
+<h2>Open-source</h2>
+<p>Yes, it is open-source licenced under BSD-2.</p>
+<p>Source code : <a href="https://github.com/harikt/ghdocs">https://github.com/harikt/ghdocs</a></p>
