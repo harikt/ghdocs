@@ -7,7 +7,6 @@
 
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
     <?php echo $this->title(); ?>
 
     <!-- CSS -->
@@ -69,6 +68,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4" id="sidebar">
+                <?php echo $this->navigation(); ?>
             </div>
             <div class="col-md-8">
                 <?php echo $this->getContent(); ?>
@@ -77,6 +77,7 @@
     </div> <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <?php /*
     <script src="<?php echo $this->router()
       ->generateRaw('aura.asset',
           array(
@@ -85,6 +86,7 @@
               'file' => 'js/docs.js'
           )
       ); ?>"></script>
+      */ ?>
     <script src="<?php echo $this->router()
       ->generateRaw('aura.asset',
           array(

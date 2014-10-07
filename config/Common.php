@@ -33,6 +33,12 @@ class Common extends Config
         $di->params['Rtdocs\Html\Helper\Releases']['ul'] = $di->lazyNew('Aura\Html\Helper\Ul');
         $di->params['Rtdocs\Html\Helper\Releases']['escaper'] = $di->lazyGet('aura/html:escaper');
         $di->params['Aura\Html\HelperLocator']['map']['releases'] = $di->lazyNew('Rtdocs\Html\Helper\Releases');
+
+        $di->params['Rtdocs\Html\Helper\Navigation']['request'] = $di->lazyGet('aura/web-kernel:request');
+        $di->params['Rtdocs\Html\Helper\Navigation']['router'] = $di->lazyGet('aura/web-kernel:router');
+        $di->params['Rtdocs\Html\Helper\Navigation']['service'] = $di->lazyGet('github_service');
+        $di->params['Aura\Html\HelperLocator']['map']['navigation'] = $di->lazyNew('Rtdocs\Html\Helper\Navigation');
+
         $di->set('view', $di->lazyNew('Aura\View\View'));
 
         $di->params['Github\Client']['httpClient'] = $di->lazyNew('Github\HttpClient\CachedHttpClient');
@@ -86,7 +92,7 @@ class Common extends Config
         $router->add('hello', '/')
                ->setValues(array('action' => 'hello'));
 
-        $router->add('read', '/{org}/{repo}/{version}/{file}')
+        $router->add('read', '/{org}/{repo}/{version}{/file}')
             ->addTokens(array(
                 'file' => '(.*)'
             ));

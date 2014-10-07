@@ -47,4 +47,14 @@ class FetchService
             return $this->factory->notFound(array('releases' => $releases));
         }
     }
+
+    public function getNavigation($org, $repo, $version)
+    {
+        try {
+            $file = $this->client->repo()->contents()->show($org, $repo, 'navigation.md', $version);
+            return $file;
+        } catch (Exception $e) {
+        }
+        return '';
+    }
 }
