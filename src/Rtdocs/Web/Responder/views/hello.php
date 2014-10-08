@@ -4,8 +4,10 @@
 <h2>Getting Started</h2>
 <p>Keep the markdown files in any directory of the repo.</p>
 <p>And call like <code>{username/org}/{repo}/{branch/tag}/{file}</code></p>
-<p>Have a look into the <a href="https://github.com/harikt/ghdocs">ghdocs</a> which keeps docs under the docs folder. You can render it calling <a href="/harikt/ghdocs/master/docs/index.md">/harikt/ghdocs/master/docs/index.md</a></p>
-<p>If you have <code>navigation.md</code> on the root of the repo it can fetch and render the navigation.</p>
+<p>Have a look into the <a href="https://github.com/harikt/aurav2book">aura v2 docs</a>written for
+<a href="https://leanpub.com/aurav2/read">leanpub</a>. You can render it
+from <a href="/harikt/aurav2book/master/manuscript/introduction.md">/harikt/aurav2book/master/manuscript/introduction.md</a></p>
+<p>If you have <code>navigation.html</code> on the root of the repo it can fetch and render the navigation.</p>
 <p>You can also read between the versions tagged clicking on the releases.</p>
 <h2>Powered by</h2>
 <ul>
