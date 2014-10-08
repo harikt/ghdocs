@@ -4,7 +4,7 @@ namespace Rtdocs\Html\Helper;
 use Aura\Web\Request;
 use Aura\Router\Router;
 use Rtdocs\Domain\Github\FetchService;
-use ParsedownExtra;
+use Aura\Html\Escaper;
 
 class Navigation
 {
@@ -29,20 +29,18 @@ class Navigation
         if ($repo && $org && $version) {
             $file = $this->service->getNavigation($org, $repo, $version);
             if ($file) {
-                $pattern = '/\[([^\]]+)\]\(([^)]+)\)/';
-                $replacement = '[${1}](' .
-                    $this->router->generate(
+                $pattern = "/(?<=href=(\"|'))[^\"']+(?=(\"|'))/";
+                $replacement = $this->router->generate(
                         'read',
                         array(
                             'repo' => $repo,
                             'org' => $org,
                             'version' => $version
                         )
-                    ) . '/$2)';
+                    ) . '/$0';
                 $content = base64_decode($file['content']);
                 $content = preg_replace($pattern, $replacement, $content);
-                $instance = new ParsedownExtra();
-                return $instance->text($content);
+                return $content;
             }
         }
         return '';

@@ -2,7 +2,7 @@ Write your documentation on any folder of the repo.
 
 # Navigation {#navigation}
 
-If you like to see navigation keep `navigation.md` on the root of the project.
+If you like to see navigation keep `navigation.html` on the root of the project.
 
 # Release project {#release-project}
 

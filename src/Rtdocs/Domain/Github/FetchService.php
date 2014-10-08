@@ -51,7 +51,7 @@ class FetchService
     public function getNavigation($org, $repo, $version)
     {
         try {
-            $file = $this->client->repo()->contents()->show($org, $repo, 'navigation.md', $version);
+            $file = $this->client->repo()->contents()->show($org, $repo, 'navigation.html', $version);
             return $file;
         } catch (Exception $e) {
         }
